@@ -68,3 +68,15 @@ streamlit run app_GRU.py
 Once executed, Streamlit will start a local server (default: [localhost:8501](http://localhost:8501))
 
 Type a short phrase in the text box, click “**Predict Next Word**”, and view the **model’s** generated suggestion instantly!
+
+### ⚡ How It Works
+
+* **Tokenizer Loading**: Loads the `tokenizer.pkl` file for consistent vocabulary mapping.
+
+* **Text Preprocessing**: Converts the user’s phrase into indexed tokens.
+
+* **Sequence Padding**: Adjusts sequence length to the model’s input shape.
+
+* **Model Inference**: Uses trained LSTM or GRU to predict the next token.
+
+* **Decoding**: Maps the predicted token index back to its corresponding word.
