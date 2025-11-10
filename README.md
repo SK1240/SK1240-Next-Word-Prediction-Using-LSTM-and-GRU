@@ -82,3 +82,11 @@ Each app follows a streamlined prediction workflow:
 * **Model Inference** → Predict next token using the trained model.
 
 * **Decode Prediction** → Convert predicted index back to its corresponding word.
+
+## 💡 Usage Notes
+
+* The **tokenizer** and **model** must belong to the same training session.
+
+* Provide meaningful context (`2–5 words`) for accurate predictions.
+
+* To fine-tune or retrain, open the training notebooks, modify parameters or **text corpus**, and re-save the updated model (`.h5`) and tokenizer (`tokenizer.pkl`).
