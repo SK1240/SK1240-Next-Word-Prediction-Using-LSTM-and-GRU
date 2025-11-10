@@ -32,11 +32,39 @@ Next-Word-Prediction-using-LSTM-GRU/
 
 ## ⚙️ Setup & Installation
 
-### 1️⃣ Clone the Repository
+1️⃣ Clone the Repository
 ```
 git clone https://github.com/SK1240/Next-Word-Prediction-Using-LSTM-and-GRU.git
 cd Next-Word-Prediction-using-GRU-LSTM
 ```
 
 2️⃣ Create and Activate a Virtual Environment
+```
+python -m venv .venv
+```
+Activate the environment:
 
+* Windows: `.venv\Scripts\activate`
+
+* macOS/Linux: `source .venv/bin/activate`
+
+3️⃣ Install Dependencies
+```
+pip install -r requirements.txt
+```
+💡 If you don’t have GPU support, use `tensorflow-cpu` instead of `tensorflow`.
+
+### ▶️ How to Run the Apps
+
+Launch the LSTM-based application:
+```
+streamlit run app_LSTM.py
+```
+
+Launch the GRU-based application:
+```
+streamlit run app_GRU.py
+```
+Once executed, Streamlit will start a local server (default: [localhost:8501](http://localhost:8501))
+
+Type a short phrase in the text box, click “**Predict Next Word**”, and view the **model’s** generated suggestion instantly!
