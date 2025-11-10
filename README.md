@@ -105,3 +105,21 @@ Each notebook (`experiments.ipynb` and `experiments_GRU.ipynb`) demonstrates:
 * **Training & Evaluation** – **Optimize** using **categorical cross-entropy**.
 
 * **Model Saving** – Export trained `.h5` model and `tokenizer.pkl`.
+
+| Notebook                   | Purpose                                |
+| -------------------------- | -------------------------------------- |
+| 🧩 `experiments.ipynb`     | Training and testing of the **LSTM model** |
+| ⚙️ `experiments_GRU.ipynb` | Training and testing of the **GRU model**  |
+
+
+## 🏁 Summary
+
+This project demonstrates how sequence modeling and neural text generation can be practically implemented using **LSTM** and **GRU** networks.
+
+With minimal setup and intuitive UI, it serves as a foundation for building more advanced language models and predictive NLP applications.
+
+## 📜 License
+
+This repository is released for **educational** and **research purposes**.
+
+Users are encouraged to **test**, **modify**, and extend the project responsibly before any production-level deployment.
