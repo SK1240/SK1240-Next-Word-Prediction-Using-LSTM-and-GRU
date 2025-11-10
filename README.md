@@ -90,3 +90,18 @@ Each app follows a streamlined prediction workflow:
 * Provide meaningful context (`2–5 words`) for accurate predictions.
 
 * To fine-tune or retrain, open the training notebooks, modify parameters or **text corpus**, and re-save the updated model (`.h5`) and tokenizer (`tokenizer.pkl`).
+
+
+## 🧪 Retraining Process
+
+Each notebook (`experiments.ipynb` and `experiments_GRU.ipynb`) demonstrates:
+
+* **Data Preparation** – Load and clean the text corpus.
+
+* **Tokenization & Sequence Generation** – Map words to integers.
+
+* **Model Construction** – Build **LSTM/GRU** layers using **Keras**.
+
+* **Training & Evaluation** – **Optimize** using **categorical cross-entropy**.
+
+* **Model Saving** – Export trained `.h5` model and `tokenizer.pkl`.
