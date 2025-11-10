@@ -69,14 +69,16 @@ Once executed, Streamlit will start a local server (default: [localhost:8501](ht
 
 Type a short phrase in the text box, click “**Predict Next Word**”, and view the **model’s** generated suggestion instantly!
 
-### ⚡ How It Works
+## ⚡ Behind the Scenes
 
-* **Tokenizer Loading**: Loads the `tokenizer.pkl` file for consistent vocabulary mapping.
+Each app follows a streamlined prediction workflow:
 
-* **Text Preprocessing**: Converts the user’s phrase into indexed tokens.
+* **Load Tokenizer** → Load `tokenizer.pkl` (used during training).
 
-* **Sequence Padding**: Adjusts sequence length to the model’s input shape.
+* **Preprocess Input** → Convert text to token indices.
 
-* **Model Inference**: Uses trained LSTM or GRU to predict the next token.
+* **Pad Sequences** → Adjust input to model’s expected length.
 
-* **Decoding**: Maps the predicted token index back to its corresponding word.
+* **Model Inference** → Predict next token using the trained model.
+
+* **Decode Prediction** → Convert predicted index back to its corresponding word.
