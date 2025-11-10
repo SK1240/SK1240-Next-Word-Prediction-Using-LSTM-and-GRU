@@ -14,3 +14,18 @@ It includes **Streamlit**-based **web applications** for **real-time text infere
 | 🧠 **Pretrained Models**   | Ready-to-use `.h5` model files and corresponding `tokenizer.pkl` tokenizer.   |
 | 📘 **Notebooks Included**  | Full training and retraining workflows for both models.                      |
 | 🔄 **End-to-End Pipeline** | Text preprocessing → tokenization → prediction → decoding.                   |
+
+## 📂 Repository Structure
+
+```
+Next-Word-Prediction-using-LSTM-GRU/
+├── app_LSTM.py               # Streamlit app for LSTM-based inference
+├── app_GRU.py                # Streamlit app for GRU-based inference
+├── model_LSTM.h5             # Pretrained LSTM model
+├── model_GRU.h5              # Pretrained GRU model
+├── tokenizer.pkl             # Tokenizer mapping words to indices
+├── hamlet.txt                # Sample text dataset used for training
+├── experiments.ipynb         # LSTM training and experiment notebook
+├── experiments_GRU.ipynb     # GRU training and experiment notebook
+└── requirements.txt          # List of required dependencies
+```
