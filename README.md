@@ -29,3 +29,14 @@ Next-Word-Prediction-using-LSTM-GRU/
 ├── experiments_GRU.ipynb     # GRU training and experiment notebook
 └── requirements.txt          # List of required dependencies
 ```
+
+## ⚙️ Setup & Installation
+
+### 1️⃣ Clone the Repository
+```
+git clone https://github.com/SK1240/Next-Word-Prediction-Using-LSTM-and-GRU.git
+cd Next-Word-Prediction-using-GRU-LSTM
+```
+
+2️⃣ Create and Activate a Virtual Environment
+
